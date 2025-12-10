@@ -2,6 +2,7 @@ services:
   oracle:
     image: container-registry.oracle.com/database/free:latest
     container_name: oracle26ai
+    hostname: oracle26ai
     ports:
       - "1521:1521"
     environment:
