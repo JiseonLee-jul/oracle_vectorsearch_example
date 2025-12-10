@@ -76,6 +76,7 @@ rm -rf oracle-data/
 ├── .env                    # 환경변수 (Git 제외)
 ├── .env.example            # 환경변수 템플릿
 ├── oracle-data/            # DB 데이터 (Git 제외)
+├── models/                 # ONNX 모델 파일 (Git 제외)
 └── scripts/
     └── setup/
         └── 01_init.sql     # 초기화 스크립트 (자동 실행)
@@ -87,4 +88,9 @@ rm -rf oracle-data/
 
 - 테이블스페이스 생성 (`vctr_ts`, 500MB, 자동확장)
 - 사용자 생성 (`vctr_user`)
-- DBA 권한 부여
+- DBA, DB_DEVELOPER_ROLE, CREATE MINING MODEL 권한 부여
+- ONNX 모델 디렉토리 생성 (`ONNX_MODELS`)
+
+## ONNX 모델 설정
+
+ONNX 모델 다운로드 및 사용법은 [models/README.md](models/README.md)를 참고하세요.

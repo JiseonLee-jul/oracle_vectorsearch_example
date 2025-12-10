@@ -22,5 +22,11 @@ ALTER USER vctr_user QUOTA UNLIMITED ON vctr_ts;
 
 -- (E) 사용자 권한 부여
 GRANT DBA TO vctr_user;
+GRANT DB_DEVELOPER_ROLE, CREATE MINING MODEL TO vctr_user;
+
+-- (F) ONNX 모델 디렉토리 생성 및 권한 부여
+CREATE OR REPLACE DIRECTORY ONNX_MODELS AS '/opt/oracle/models';
+GRANT READ ON DIRECTORY ONNX_MODELS TO vctr_user;
+GRANT WRITE ON DIRECTORY ONNX_MODELS TO vctr_user;
 
 EXIT;

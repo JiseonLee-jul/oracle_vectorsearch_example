@@ -3,3 +3,7 @@ oracle-data/
 
 # 환경변수 파일
 .env
+
+# ONNX 모델 파일
+models/*.onnx
+models/*.zip

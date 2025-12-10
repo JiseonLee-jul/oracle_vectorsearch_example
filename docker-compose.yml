@@ -9,6 +9,7 @@ services:
     volumes:
       - ./oracle-data:/opt/oracle/oradata
       - ./scripts/setup:/opt/oracle/scripts/setup
+      - ./models:/opt/oracle/models
     restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "echo 'SELECT 1 FROM DUAL;' | sqlplus -S sys/${ORACLE_PWD}@//localhost:1521/FREEPDB1 as sysdba | grep -q 1"]
