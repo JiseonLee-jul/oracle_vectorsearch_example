@@ -4,7 +4,7 @@
 
 | ID | 모델명 | 설명 | 파일명 |
 |----|--------|------|--------|
-| `all-minilm` | all-MiniLM-L12-v2 | 범용 텍스트 임베딩 (384차원) | `all_MiniLM_L12_v2_augmented.onnx` |
+| `all-minilm` | all-MiniLM-L12-v2 | 범용 텍스트 임베딩 (384차원) | `all_MiniLM_L12_v2.onnx` |
 
 ## 다운로드
 
