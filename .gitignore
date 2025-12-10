@@ -1,0 +1,5 @@
+# Oracle 데이터 디렉토리
+oracle-data/
+
+# 환경변수 파일
+.env
