@@ -1,0 +1,13 @@
+[project]
+name = "oracle-vectordb"
+version = "0.1.0"
+description = "Oracle VectorDB 적재 도구"
+requires-python = ">=3.12"
+dependencies = [
+    "oracledb>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+load-models = "models.load_models:main"
+download-models = "models.download_models:main"

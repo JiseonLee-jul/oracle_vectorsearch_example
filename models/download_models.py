@@ -51,7 +51,8 @@ def download_model(model: dict, output_dir: Path):
 
 def main():
     config = load_config()
-    output_dir = Path(__file__).parent
+    output_dir = Path(__file__).parent / "onnx"
+    output_dir.mkdir(exist_ok=True)
 
     # 특정 모델만 다운로드
     target_id = sys.argv[1] if len(sys.argv) > 1 else None

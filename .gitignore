@@ -5,5 +5,11 @@ oracle-data/
 .env
 
 # ONNX 모델 파일
-models/*.onnx
-models/*.zip
+models/onnx/*
+!models/onnx/.gitkeep
+
+# PDF 문서 파일
+documents/*.pdf
+
+# venv 가상환경
+.venv/

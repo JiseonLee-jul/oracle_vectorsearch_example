@@ -5,7 +5,8 @@
       "name": "all-MiniLM-L12-v2",
       "description": "범용 텍스트 임베딩 (384차원)",
       "url": "https://adwc4pm.objectstorage.us-ashburn-1.oci.customer-oci.com/p/VBRD9P8ZFWkKvnfhrWxkpPe8K03-JIoM5h_8EJyJcpE80c108fuUjg7R5L5O7mMZ/n/adwc4pm/b/OML-Resources/o/all_MiniLM_L12_v2_augmented.zip",
-      "output": "all_MiniLM_L12_v2.onnx"
+      "output": "all_MiniLM_L12_v2.onnx",
+      "db_model_name": "ALL_MINILM_L12_V2"
     }
   ]
 }
